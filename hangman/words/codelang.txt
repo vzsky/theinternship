@@ -1,9 +1,9 @@
-python
-java
-javascript
-ruby
-shell
-pascal
-C++
-c#
-HtMl
+python hint(py)
+java hint(java)
+javascript hint(js)
+ruby hint(rb)
+shell hint(bash)
+pascal hint(old)
+C++ hint(C)
+c# hint(c)
+HtMl hint(markup)

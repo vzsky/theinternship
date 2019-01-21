@@ -1,6 +1,10 @@
-import sys, os
+import os, sys, tty
 from random import randint
 from man import stickman
+from pick import pick
+from glob import glob
+
+tty.setcbreak(sys.stdin)  
 
 mistake = 0
 point = 0
@@ -48,21 +52,27 @@ def printhangman(m):
 def select (topic):
     words_set  = open("words/"+topic+".txt", "r")
     words = words_set.readlines()
-    text = words[randint(0, len(words)-1)]
+    random = randint(0, len(words)-1)
+    text = words[random].split(' ')[0]
+    hint = words[random].split(' ')[1]
     word = Word(text)
-    return word
+    return word, hint
 
 def choose ():
-    return "codelang"
+    title = 'pick the topic of words'
+    options = [file.replace("./words/", "").replace(".txt","") for file in glob("./words/*.txt")]
+    option, index = pick(options, title)
+    return option
 
 def play (topic):
     global point
-    word = select(topic)
+    word, hint = select(topic)
     global mistake
     mistake = 0
 
     while True :
         os.system('clear')
+        print("hint :", hint)
         printhangman(mistake)
         if mistake == 5 :
             raise Exception("MistakeReached")
@@ -84,7 +94,8 @@ def play (topic):
 
         print("points :", point)
 
-        g = input("Character : ")
+        print("Character : ")
+        g = chr(ord(sys.stdin.read(1)))
         word.guess(g.lower())
 
 if __name__ == "__main__":
@@ -96,16 +107,16 @@ if __name__ == "__main__":
             print("Gameover", e)
             print("You got", point, "point")
             break
-        cmd = input("hit space to continue, hit r to reselect topic")
-        if cmd == 'r':
-            topic = choose()
-        elif cmd != ' ':
-            break
+        print("space to continue, r to reselect topic, q to quit")
+        while True:
+            cmd = ord(sys.stdin.read(1))
+            if cmd == ord('r'):
+                topic = choose()
+            elif cmd == ord(' '):
+                break
+            elif cmd == ord('q'):
+                quit()
         guessed = []
         
-#! Bugs on string inputs
-#TODO onkey events will fix the bug
 #TODO make shell cmd
-#TODO somehow test on windows
-#TODO Menu page
-        
+#TODO somehow test on windows linux? since lib are diff?
