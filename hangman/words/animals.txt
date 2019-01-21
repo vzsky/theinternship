@@ -1,0 +1,5 @@
+baboon monkey
+bison buffalo
+hamster mouse
+panda bear
+butterfly insect

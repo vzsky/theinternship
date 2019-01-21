@@ -44,6 +44,14 @@ once worked on virtualenv :
 
     (intern) : pip install -r req.txt
 
+### (optional) Install xml2json for mac
+
+do this command
+    chmod +x mac_install.sh
+    ./mac_install.sh
+
+then you can do
+    xml2json inputfile outputfile from anywhere 
 ### RUN!
 
 waiting for making shell cmd

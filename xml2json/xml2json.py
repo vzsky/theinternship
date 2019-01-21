@@ -1,8 +1,11 @@
 from lxml import etree
 from json import dumps as jsonify
+import sys, os
 
-xml = open("input.xml", 'r')
-json = open("output.json", 'w+')
+args = sys.argv
+
+xml = open(args[1], 'r')
+json = open(args[2], 'w+')
 xml_str = xml.read()
 
 xml_arr = [x for x in xml_str.split('\n') if x!= xml_str.split('\n')[0]]

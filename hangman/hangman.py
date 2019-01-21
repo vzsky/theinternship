@@ -80,7 +80,7 @@ def play (topic):
         left = word.more()
         if left == 0 :
             os.system('clear')
-            print(word, end='')
+            print(word)
             print("you got", point, "points")
             break
 

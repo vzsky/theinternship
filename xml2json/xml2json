@@ -1,0 +1,1 @@
+python xml2json.py $1 $2

@@ -1,9 +1,7 @@
-python hint(py)
-java hint(java)
-javascript hint(js)
-ruby hint(rb)
-shell hint(bash)
-pascal hint(old)
-C++ hint(C)
-c# hint(c)
-HtMl hint(markup)
+python snake
+java coffee
+javascript node
+ruby diamond
+pascal math
+C++ include
+HtMl markup
