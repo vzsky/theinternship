@@ -1,9 +1,9 @@
 # vzsky_theinternship 
 
-This repository is made for applicating in the theinternship.io program.
-Consist of 2 directories, "hangman" for the first given problem , and "xml2json" for the second given problem.
+This repository is made for applicating in the theinternship.io program. <br/>
+Consist of 2 directories, "hangman" for the first given problem , and "xml2json" for the second given problem.<br/>
 
-all problems are solve using python3.
+all problems are solve using python3.<br/>
 other useful informations are provided below.
 
 # Problems
@@ -20,8 +20,8 @@ go on and install python3 on your machine [here](https://realpython.com/installi
 
 ## Working on virtualenvironment?
 
-You can work on virtualenvironment if you don't want to mess up your machine.
-Anyway, you can skip this part, working on root environment.
+You can work on virtualenvironment if you don't want to mess up your machine.<br/>
+Anyway, you can skip this part, working on root environment.<br/>
 See [this](https://docs.python.org/3/library/venv.html) more the document.
 
 for an example: ( on virtualenvwrapper extension )
@@ -29,11 +29,10 @@ for an example: ( on virtualenvwrapper extension )
     mkvirtualenv -p python3 intern
 
 ## Clone the repo.
-on the local directory of cloned repo.
-easily do : 
-`git clone https://github.com/vzsky/theinternship.git vzsky
- cd vzsky
-`
+on the local directory of cloned repo.<br/>
+easily do :
+    git clone https://github.com/vzsky/theinternship.git vzsky
+    cd vzsky
 
 ### Install requirements
 
@@ -48,14 +47,14 @@ this requirement installation handle both requirements of hangman and weather
 # Developing
 
 ## Developer
-me: `Touch Sungkawichai.`
-contact me :  `talay@layki.net`
-phone : ` (+66)802075412`
+me: `Touch Sungkawichai.`<br/>
+contact me :  `talay@layki.net`<br/>
+phone : ` (+66)802075412`<br/>
 
 ## Special thanks
 
- Stackoverflow for debugging
- Stackoverflow for idea
+ Stackoverflow for debugging<br/>
+ Stackoverflow for idea<br/>
  Stackoverflow for code examples
 
 ## Library included

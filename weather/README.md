@@ -6,7 +6,7 @@ This program turn input xml file to json file
 
 ## Installing requirement
 
-this program used lxml libraries to work.
+this program used lxml libraries to work.<br/>
 if you had installed the requirements mentioned on the ../README.md, you're done, please skip this section.
 
 If not, please do
@@ -23,22 +23,27 @@ to run this program.
 
 
 ### (optional) Install xml2json for mac
-( not recommended on testing environments. )
-run this command
+( not recommended on testing environments. )<br/>
+run this command<br/>
+
     chmod +x mac_install.sh
     ./mac_install.sh
 
 then you can do
+
     xml2json inputfile outputfile
+
 instread of 
+
     python xml2json.py inputfile outputfile
+
 from any directories.
 
 # Developing
 
 ## Developer
-me: `Touch Sungkawichai.`
-contact me :  `talay@layki.net`
+me: `Touch Sungkawichai.`<br/>
+contact me :  `talay@layki.net`<br/>
 phone : ` (+66)802075412`
 
 ## Library included
